@@ -7,24 +7,142 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-    
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<div class="main" >
-    <h2>COVID CASES World Wide</h2>
-    <button class="btn btn-warning" id="btn1"> Get COVID-19 Data</button>
-    <div class="card">
-        - Manish Nandha Vegi
-    </div>
+ <div class="man" >
+    <h2>COVID-19 Cases World Wide</h2>
+    
 </div>
+<div class="container">
+    <div class="dropdown m-3" style="justify-content: center;align-items: center;text-align: center;">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select Country
+      </a>
+    
+      <div id="submen" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        
+      </div>
+    </div>
+    </div>
+
 <div class="container" id="result">
 
 </div>
+<div class="card text-white bg-primary mb-3" style="width: 100vw;position:fixed;bottom: -35px;
+margin-right: auto;
+margin-left: auto;">
+
+    <div class="card-body">
+      <h5 class="card-title text-center">Made with Sanitized hands and <img id="loveimg" src = "https://image.flaticon.com/icons/svg/1216/1216649.svg" style="width: 5%;"> by <strong style="font-family: 'Caveat', cursive;font-size: 30px;">Manish Nandha Vegi (: <span style="font-family: montserrat;font-size:20px;font-weight: normal;">manishvegi77@gmail.com</span> :)</strong></h5>
+    </div>
+  </div>
+<style>
+ 
+</style>
 <button onclick="topFunction()" id="myBtn" title="Go to top"  style="padding:0;margin:0;"><img src="/arrow-up-solid.svg" alt="top" style="width: 10%;"></button>
+<!-- Example split danger button -->
+
+
+<!-- <nav id="primary_nav_wrap" >
+    <ul>
+      <li><a href="#" id="dmen">Menu 1</a>
+        <ul id='submen'>
+        <li><a herf="#">submen1</a></li>
+        </li>
+        </ul>
+        </nav> -->
+
+<style>
+
+#primary_nav_wrap
+{
+    margin-top:15px;
+
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+    padding:0;
+
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+/* #primary_nav_wrap ul li:hover > ul
+{
+	display:block
+} */
+</style>
+
+
 <script src='main.js'></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

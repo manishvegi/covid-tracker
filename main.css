@@ -1,8 +1,11 @@
-.main{
+.man{
 text-align: center;
-background:linear-gradient(145deg,#0d47a1,#42a5f5);
+background:linear-gradient(145deg,#007aff,#007af0);
 padding: 20px;
 color: white;
+}
+.crazy {
+    display: none;
 }
 
 body{
