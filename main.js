@@ -31,10 +31,11 @@ var submen = document.getElementById('submen')
         country = countryId + '1';
         
         template += `
-        <div class= "col-lg-12  crazy text-center "  id="` + country + `">
+        <div class= "col-lg-12  crazy text-center align-self-center "  id="` + country + `">
         <div class="list-group ">
         <a href="#" class="list-group-item list-group-item-action active">
         <strong>Country: ${element.country}</strong>
+        <img src= ${element.countryInfo.flag} style="width:10%;"></img>
         </a>
         <a href="#" class="list-group-item list-group-item-action "><strong>Total Cases: <span style="color:orange;font-size:20px;">${element.cases}</span></strong></a>
         <a href="#" class="list-group-item list-group-item-action"><strong>Total Deaths: <span style="color:red;font-size:20px;">${element.deaths}</span></strong></a>
