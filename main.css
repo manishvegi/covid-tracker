@@ -1,0 +1,14 @@
+.main{
+text-align: center;
+background:linear-gradient(145deg,#0d47a1,#42a5f5);
+padding: 20px;
+color: white;
+}
+
+body{
+    background-image: url("/cov.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: center;
+}
