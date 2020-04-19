@@ -58,7 +58,7 @@ var submen = document.getElementById('submen')
                 sleep(500).then(() => {
                 con.classList.add('animated', 'bounceInLeft')
                 con.style.display = "block"
-            })
+                })
                 
                  
                 }
