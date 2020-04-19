@@ -1,6 +1,8 @@
 var btn = document.getElementById("btn1");
 var con = 0;
 var country;
+var val;
+var test12 = [];
 (function () {  
 
     fetch('https://corona.lmao.ninja/v2/countries')
@@ -20,8 +22,7 @@ var submen = document.getElementById('submen')
             var a = document.createElement('a')
             var countryId = `${element.country}`
             countryId = countryId.replace(/\s/g, '')
-            console.log(countryId)
-            a.appendChild(document.createTextNode(countryId))
+            a.appendChild(document.createTextNode(`${element.country}`))
             a.setAttribute('class','dropdown-item')
             a.setAttribute('id',`${element.country}`)
             submen.appendChild(a)
@@ -29,7 +30,6 @@ var submen = document.getElementById('submen')
             submen.style.overflow = "scroll"
           
         country = countryId + '1';
-        
         template += `
         <div class= "col-lg-12  crazy text-center align-self-center "  id="` + country + `">
         <div class="list-group ">
@@ -51,11 +51,12 @@ var submen = document.getElementById('submen')
         submen.addEventListener('click',() =>{
             window.onclick = e => {
 
-                var val = e.target.innerText + '1'   
-                val = val.replace(/ .*/,"")
+                val = e.target.innerText + '1'   
+                val = val.replace(/\s/g, '')
                 if((val.slice(-1)) == '1' ){
                 con = document.getElementById(val)
-                sleep(500).then(() => {
+                test12.push(val)
+                sleep(600).then(() => {
                 con.classList.add('animated', 'bounceInLeft')
                 con.style.display = "block"
                 })
@@ -78,15 +79,25 @@ var submen = document.getElementById('submen')
               
               // Usage!
               
+              var i = -2
             var prev = con
-            if(con == 0 ){
+            if(con == 0  || val == test12[test12.length-1]){
+                var de = document.getElementById(test12[test12.length-1])
+                de.classList.add('animated','bounceOutRight')
+                sleep(500).then(() => {
+                    // Do something after the sleep!
+                    de.style.display = 'none'
+                    de.classList.remove('animated','bounceOutRight')
+                });
 
+                
             }
             else{
             prev.classList.add('animated','bounceOutRight')
             sleep(500).then(() => {
                 // Do something after the sleep!
                 prev.style.display = 'none'
+                prev.classList.remove('animated','bounceOutRight')
             });
             
             }
